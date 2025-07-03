@@ -1,0 +1,15 @@
+/* Custom styles for smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Inter', sans-serif; /* Using Inter font as recommended */
+}
+/* Ensure Lucide icons are properly displayed and aligned */
+.lucide {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Tailwind CSS is loaded via CDN, so most styling is handled by classes in HTML.
+   This file is primarily for custom global styles or overrides. */
