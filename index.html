@@ -215,7 +215,7 @@
                     />
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-900 mb-3">BillMate App</h3>
-                        <p class="text-700 mb-4">A real-time billing application designed for offline use, with Firebase as its database. This app functions seamlessly on both mobile phones and for printing purposes.</p>
+                        <p class="text-gray-700 mb-4">A real-time billing application designed for offline use, with Firebase as its database. This app functions seamlessly on both mobile phones and for printing purposes.</p>
                         <a
                             href="#"
                             class="inline-block bg-indigo-600 text-white py-2 px-5 rounded-full hover:bg-indigo-700 transition duration-300 ease-in-out"
@@ -298,7 +298,7 @@
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center text-indigo-700 mb-12">Contact Me</h2>
             <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-xl border border-indigo-200">
-                <form class="space-y-6">
+                <form id="contact-form" action="https://formspree.io/f/your_form_id" method="POST" class="space-y-6">
                     <div>
                         <label for="name" class="block text-lg font-medium text-gray-700 mb-2">
                             Name
@@ -324,6 +324,7 @@
                             placeholder="Your Email"
                             required
                         />
+                        <input type="hidden" name="_replyto" id="replyto-email">
                     </div>
                     <div>
                         <label for="message" class="block text-lg font-medium text-gray-700 mb-2">
@@ -345,6 +346,7 @@
                         Send Message
                     </button>
                 </form>
+                <div id="form-status" class="mt-4 text-center text-sm font-medium hidden"></div>
             </div>
         </div>
     </section>
@@ -363,7 +365,7 @@
                     GitHub
                 </a>
                 <a href="#contact" class="text-gray-400 hover:text-white transition duration-300">
-                   contact
+                    Contact
                 </a>
             </div>
         </div>
